@@ -1,10 +1,21 @@
 <div class="drawer">
+    <div class="row p-2">
+        <div class="row">
+            <a routerLink="/" ><em class="material-icons">home</em></a>
+        </div>
+        <div class="row flex-end">
+            <a routerLink="/" ><em class="material-icons">notifications</em></a>
+            <a routerLink="/" class="p-1"><em class="material-icons">person</em></a>
+        </div>
+    </div>
+
+    <div class="profile"></div>
     <a [routerLink]="['/']">
         <h1>My Store</h1>
     </a>
     
     <div class="drawer-menu">
-        <a routerLink="/aboutUs" class="drawer-menu-item">About Us</a>
+        <a routerLink="/aboutUs" class="drawer-menu-item"><em class="material-icons">help</em>About Us</a>
         <a class="drawer-menu-item"><em class="material-icons">shopping_cart</em>Checkout</a>
     </div>
 </div>
