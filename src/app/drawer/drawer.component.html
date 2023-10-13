@@ -1,19 +1,43 @@
-<div class="drawer">
-    <div class="row p-2">
-        <div class="row">
-            <a routerLink="/" ><em class="material-icons">home</em></a>
-        </div>
-        <div class="row flex-end">
-            <a routerLink="/" ><em class="material-icons">notifications</em></a>
-            <a routerLink="/" class="p-1"><em class="material-icons">person</em></a>
-        </div>
+<div class="drawer p-4">
+  <div class="d-flex justify-content-between" style="width: 100%">
+    <a routerLink="/">
+      <span class="material-symbols-outlined icon-size">home</span>
+    </a>
+    <div class="d-flex justify-content-end">
+      <a routerLink="/">
+        <span class="material-symbols-outlined icon-size pe-2 position-relative">
+          notifications
+          <div *ngIf="notificationCounter > 0">
+            <span
+              class="position-absolute top-0 start-0 translate-middle badge rounded-pill bg-danger badge-font">
+              {{ notificationCounter }}
+            </span>
+          </div>
+        </span>
+      </a>
+      <a routerLink="/">
+        <span class="material-symbols-outlined icon-size">account_circle</span>
+      </a>
     </div>
+  </div>
 
-    <div class="profile"></div>
-    <h2>Oktavian Yudi Hartono</h2>
-    
-    <div class="drawer-menu">
-        <a routerLink="/aboutUs" class="drawer-menu-item"><em class="material-icons">help</em>About Us</a>
-        <a class="drawer-menu-item"><em class="material-icons">shopping_cart</em>Checkout</a>
+  <div class="d-flex align-items-center justify-content-center">
+    <div class="profile">
+      <div class="d-flex align-items-center justify-content-center" style="height: 100%">
+        <span class="material-symbols-outlined default-pp">person</span>
+      </div>
     </div>
+  </div>
+  <h2 class="pt-2">User</h2>
+
+  <div class="drawer-menu">
+    <div class="drawer-menu-title">MAIN MENU</div>
+
+    <a routerLink="/aboutUs" class="drawer-menu-item p-3">
+      <span class="material-symbols-outlined pe-3">help</span>About Us
+    </a>
+    <a class="drawer-menu-item p-3">
+      <span class="material-symbols-outlined pe-3">shopping_cart</span>Checkout
+    </a>
+  </div>
 </div>

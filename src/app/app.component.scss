@@ -1,13 +1,12 @@
-.row{
-    display: flex;
-    flex-direction: row;
-    height: 100vh;
+.main {
+  height: 100vh;
+  overflow-y: scroll;
 }
 
-.drawer{
-    width: 20%;
+.drawer {
+  width: 311px;
 }
 
-.container{
-    width: 80%;
+.d-flex {
+  height: 100vh;
 }
