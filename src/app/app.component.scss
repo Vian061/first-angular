@@ -1,12 +1,15 @@
 .main {
   height: 100vh;
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 
 .drawer {
-  width: 311px;
+  width: 311px !important;
+  box-sizing: border-box;
+  flex: 0 0 311px;
 }
 
 .d-flex {
   height: 100vh;
+  flex: 1;
 }
